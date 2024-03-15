@@ -1,0 +1,114 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+#search-input {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+  outline: none;
+}
+
+#search-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid transparent;
+  font-size: 18px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+}
+
+#search-btn:hover {
+  background-color: #3e8e41;
+}
+
+.search-results {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minMax(300px, 1fr));
+  gap: 40px;
+}
+
+.search-result {
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.search-result:hover img {
+  transform: scale(1.08);
+}
+
+.search-result img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 300ms ease-in-out;
+}
+
+.search-result a {
+  display: block;
+  height: 100%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 300ms ease-in-out;
+}
+
+.search-result:hover a {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#show-more-btn {
+  background-color: #008cba;
+  border: 1px solid transparent;
+  color: white;
+  padding: 10px 20px;
+  margin: 40px 0px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+}
+
+#show-more-btn:hover {
+  background-color: #0077b5;
+}
+
+#head:hover {
+  cursor: pointer;
+}
